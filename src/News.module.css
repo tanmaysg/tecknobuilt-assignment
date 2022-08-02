@@ -1,0 +1,106 @@
+.main{
+    position: relative;
+    width: 100%;
+    padding-top: 18vh;
+    background-color: #b4fbf597;
+}
+
+.search{
+    position: sticky;
+    top: 14vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.search input{
+    min-width: 20vw;
+    height: 4vh;
+    border: 1px solid black;
+}
+
+.source_list{
+    margin-left: 1vw;
+    min-width: 5vw;
+    height: 4vh;
+}
+
+.news{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 33vw);
+    text-align: center;
+}
+
+.news_card{
+    margin: 2vw 1vw;
+    background-color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.news_card:hover{
+    box-shadow: 0 0 20px rgba(142, 142, 142, 0.702);
+}
+
+.news_card .image{
+    width: 100%;
+    height: 18vw;
+}
+
+.news_card .image img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.news_card .image img::before{
+    content: '';
+    display: block;
+    background-image: url("./noimage.png");
+    background-size: cover;
+    width: 31vw;
+    height: 17vw;
+}
+
+.news_card .text{
+    color: black;
+    margin: 1vw;
+}
+
+.news_card .text h1{
+    max-width: 100%;
+    font-size: 2.3vw;
+}
+
+.news_card .text h2{
+    width: 100%;
+    margin: 1vw 0;
+    font-size: 1.2vw;
+}
+
+.news_card .text p{
+    font-size: 1vw;
+    color: gray;
+}
+
+.news_card .text span{
+    color: red;
+}
+
+.error{
+    width: 100%;
+    max-height: 78vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.errmsg{
+    font-size: 3vw;
+    color: red;
+    font-style: italic;
+    font-weight: bolder;
+}
