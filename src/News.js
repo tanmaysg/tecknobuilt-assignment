@@ -13,7 +13,7 @@ function News(){
             if (res.ok) {
                 return res.json();
             }
-            throw Error('OOPs!!! Something went wrong / Daily API limit Reached');
+            throw Error('OOPs!!! Something went wrong / Daily API limit Reached, read "ReadMe" file');
         })
         .then((data)=>{
             setData(data.articles);
