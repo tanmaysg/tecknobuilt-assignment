@@ -8,7 +8,7 @@ function News(){
     const [searchterm, setsearchTerm] = useState('');
 
     useEffect(()=>{
-        fetch("https://newsapi.org/v2/everything?q=apple&from=2022-07-30&to=2022-07-30&sortBy=popularity&apiKey=bede4d6472c8480ea859eb8bf93e6a90")
+        fetch("https://newsapi.org/v2/everything?q=apple&from=2022-07-30&to=2022-07-30&apiKey=bede4d6472c8480ea859eb8bf93e6a90")
         .then((res)=>{
             if (res.ok) {
                 return res.json();
